@@ -14,8 +14,18 @@
 <script>
 import { ref } from 'vue'
 import axios from 'axios'
+import InputText from 'primevue/inputtext'
+import { Password } from 'primevue'
+import Button from 'primevue'
+
+
 
 export default {
+    components: {
+        InputText,
+        Password,
+        Button
+    },
     setup() {
         const name = ref('');
         const email = ref('');
@@ -44,3 +54,30 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.register {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.register h1 {
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.p-inputtext,
+.p-password {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.p-button {
+    width: 100%;
+    background-color: #42b983;
+    border-color: #42b983;
+}
+</style>
