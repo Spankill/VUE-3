@@ -1,0 +1,52 @@
+via terminal 
+1.- git init (vue youtube)
+        package name: (vueyoutube)
+        version: (1.0.0)                                                                        
+        description:                                                                            
+        entry point: (index.js)                                                                 
+        test command:                                                                           
+        git repository: https://github.com/Spankill/VUE-3.git                                   
+        keywords:                                                                               
+        author: NullSafe Architect CHANNEL YT                                                   
+        license: (ISC)                                                                          
+        type: (commonjs)
+Is this OK? (yes)
+
+2.- ls
+package.json    (el archivo que se crea para controlar los paquetes)
+
+3.-cat package.json    (para verificar el contenido)
+
+4.- instalamos los primeros paquetes 
+
+npm install express --save
+npm install mysql --save
+
+5.-  creamos el index.js en la carpeta del proyecto 
+
+6.- creamos un carpeta (Public) para los archivos estaticos y dentro 
+    un archivo (main.css)  para los estilos css que vayamos a usar
+    otro archivo (app.js) donde va el javascript publico
+
+7.- personalizamos main.css con un estilado basico 
+para el body , #app , .loading
+
+
+8.- dentro del body 
+<body>
+    <div class="app">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+    <script src="https://unpkg.com/@primeuix/themes/umd/aura.js"></script>
+
+
+    <link rel="stylesheet" href="./main .css">
+    <script src="./app.js"></script>
+</body>
+
+links al css al js y los links de prime vue global , primevue ,y el thema en este caso aura.js
+

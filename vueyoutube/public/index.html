@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="app">
+        <h1>Selecciona la fecha (-)</h1>
+        <p-calendar v-model="fecha" v-on:select="loadData" dateFormat="dd/mm/yy"></p-calendar>
+
+        <div v-show="fecha!=' ' ">
+            <h2>DATOS</h2>
+            <p-chart type="line" :data="datos" style="width: 900px; height: 400px;" ></p-chart>
+        </div>
+
+        <div class="loading" v-show="loading" ></div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+    <script src="https://unpkg.com/@primeuix/themes/umd/aura.js"></script>
+    <script src="
+import Calendar from 'primevue/calendar';
+"></script>
+
+
+    <link rel="stylesheet" href="./main .css">
+    <script src="./app.js"></script>
+</body>
+</html>
